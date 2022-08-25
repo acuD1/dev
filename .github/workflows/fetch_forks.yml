@@ -26,6 +26,6 @@ jobs:
           upstream_repository: ${{ matrix.main }}
           target_repository: ${{ matrix.fork }}
           upstream_branch: ${{ matrix.branch }}
-          target_branch: ${{ matrix.branch }}
+          target_branch: sync-fork
           force: true
           tags: true
