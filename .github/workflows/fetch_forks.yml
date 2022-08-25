@@ -77,7 +77,7 @@ jobs:
 
           - fork: acuD1/actions-docker-registry-tag
             main: shrink/actions-docker-registry-tag
-            branch: main
+            branch: release
 
           - fork: acuD1/action-create-tag
             main:  rickstaa/action-create-tag
