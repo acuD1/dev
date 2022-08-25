@@ -83,6 +83,10 @@ jobs:
             main:  rickstaa/action-create-tag
             branch: main
 
+          - fork: acuD1/release-action
+            main: ncipollo/release-action
+            branch: main
+
           - fork: acuD1/delete-workflow-runs
             main: Mattraks/delete-workflow-runs
             branch: main
