@@ -22,7 +22,7 @@ jobs:
 
       - uses: TobKed/github-forks-sync-action@master
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
+          github_token: ${{ secrets.DEV }}
           upstream_repository: ${{ matrix.main }}
           target_repository: ${{ matrix.fork }}
           upstream_branch: ${{ matrix.branch }}
