@@ -93,7 +93,7 @@ jobs:
 
     steps:
 
-      - uses: TobKed/github-forks-sync-action@master
+      - uses: acuD1/github-forks-sync-action@master
         with:
           github_token: ${{ secrets.DEV }}
           upstream_repository: ${{ matrix.main }}
