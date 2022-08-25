@@ -2,7 +2,7 @@ name: Sync forks
 
 on:
   schedule:
-     - cron: '*/30 * * * *' # every 30 minutes
+     - cron: '0 1 * * *'
   workflow_dispatch:
 
 jobs:
@@ -16,14 +16,76 @@ jobs:
         include:
 
           # Test fork
+
           - fork: acuD1/test-fork
             main: dev-easyshares/test-fork
             branch: main
 
           # The calling action: github-forks-sync-action
+
           - fork: acuD1/github-forks-sync-action
             main: TobKed/github-forks-sync-action
             branch: master
+
+          # action
+
+          - fork: acuD1/checkout
+            main: actions/checkout
+            branch: main
+
+          - fork: acuD1/download-artifact
+            main: actions/download-artifact
+            branch: main
+
+          - fork: acuD1/download-artifact
+            main: actions/download-artifact
+            branch: main
+
+          - fork: acuD1/upload-artifact
+            main: actions/upload-artifact
+            branch: main
+
+          - fork: acuD1/github-script
+            main: actions/github-script
+            branch: main
+
+          # octokit
+
+          - fork: acuD1/graphql-action
+            main: octokit/graphql-action
+            branch: master
+
+          # docker
+
+          - fork: acuD1/setup-buildx-action
+            main: docker/setup-buildx-action
+            branch: master
+
+          - fork: acuD1/login-action
+            main: docker/login-action
+            branch: master
+
+          - fork: acuD1/build-push-action
+            main: docker/build-push-action
+            branch: master
+
+          - fork: acuD1/metadata-action
+            main: docker/metadata-action
+            branch: master
+
+          # public
+
+          - fork: acuD1/actions-docker-registry-tag
+            main: shrink/actions-docker-registry-tag
+            branch: main
+
+          - fork: acuD1/action-create-tag
+            main:  rickstaa/action-create-tag
+            branch: main
+
+          - fork: acuD1/delete-workflow-runs
+            main: Mattraks/delete-workflow-runs
+            branch: main
 
     steps:
 
