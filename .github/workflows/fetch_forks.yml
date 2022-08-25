@@ -14,9 +14,16 @@ jobs:
     strategy:
       matrix:
         include:
+
+          # Test fork
           - fork: acuD1/test-fork
             main: dev-easyshares/test-fork
             branch: main
+
+          # The calling action: github-forks-sync-action
+          - fork: acuD1/github-forks-sync-action
+            main: TobKed/github-forks-sync-action
+            branch: master
 
     steps:
 
