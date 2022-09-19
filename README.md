@@ -15,7 +15,7 @@
 
 ### docker
 
-- [acuD1/docker/setup-qemu-action](https://github.com/acuD1/docker/setup-qemu-action)
+- [acuD1/setup-qemu-action](https://github.com/acuD1/setup-qemu-action)
 - [acuD1/setup-buildx-action](https://github.com/acuD1/setup-buildx-action)
 - [acuD1/login-action](https://github.com/acuD1/login-action)
 - [acuD1/build-push-action](https://github.com/acuD1/build-push-action) 
