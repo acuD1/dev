@@ -57,6 +57,10 @@ jobs:
 
           # docker
 
+          - fork: acuD1/setup-qemu-action
+            main: docker/setup-qemu-action
+            branch: master
+
           - fork: acuD1/setup-buildx-action
             main: docker/setup-buildx-action
             branch: master
