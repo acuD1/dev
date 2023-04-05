@@ -53,7 +53,7 @@ jobs:
 
           - fork: acuD1/graphql-action
             main: octokit/graphql-action
-            branch: master
+            branch: main
 
           # docker
 
