@@ -24,5 +24,6 @@
 ### public
 
 - [acuD1/actions-docker-registry-tag](https://github.com/acuD1/actions-docker-registry-tag)
+- [acuD1/release-action](https://github.com/acuD1/release-action)
 - [acuD1/action-create-tag](https://github.com/acuD1/action-create-tag)
 - [acuD1/delete-workflow-runs](https://github.com/acuD1/delete-workflow-runs)
